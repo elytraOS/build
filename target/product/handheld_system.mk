@@ -83,10 +83,4 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libeffects/data/audio_effects.conf:system/etc/audio_effects.conf
 
 PRODUCT_VENDOR_PROPERTIES += \
-    ro.carrier?=unknown \
-
-ifeq ($(ELYTRA_BUILD),)
-PRODUCT_VENDOR_PROPERTIES += \
-    ro.config.notification_sound?=OnTheHunt.ogg \
-    ro.config.alarm_alert?=Alarm_Classic.ogg
-endif
+    ro.carrier?=unknown
